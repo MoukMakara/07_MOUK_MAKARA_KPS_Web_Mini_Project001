@@ -23,11 +23,11 @@
   <body>
     <!-- Background Image -->
     <div
-      class="bg-[url(../images/Decore2.png)] absolute -top-36 right-0 max-w-screen-xl w-[666px] h-[672px] bg-no-repeat bg-cover"
+      class="bg-[url(../images/Decore2.png)] absolute top-0 right-0 max-w-screen-xl w-[666px] h-[672px] bg-no-repeat bg-cover"
     ></div>
 
     <!-- header -->
-    <header class="w-full ">
+    <header class="w-full flex items-center justify-center">
       <nav
         class="fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-full max-w-screen-xl dark:bg-gray-900 dark:border-gray-700"
       >
@@ -36,7 +36,7 @@
         >
           <img
             class="flex items-center text-3xl font-bold space-x-3 rtl:space-x-reverse"
-            src="../images/Jadoo.png"
+            src="../images/Logo.png"
             alt=""
           />
           <button
@@ -65,7 +65,7 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-16 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
               <li>
                 <a
@@ -101,6 +101,15 @@
                   class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   >Login</a
                 >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  type="button"
+                  class="text-gray-900 border border-gray-300 font-medium rounded-lg text-sm px-5 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                >
+                  Sign Up
+                </a>
               </li>
               <li>
                 <button
@@ -183,18 +192,23 @@
               </a>
             </div>
             <div class="flex items-center">
-              <img class="w-24 h-24 mt-6" src="../images/Play button.svg" alt="Play button"  />
-              <p class="text-base font-medium text-center text-gray-900 dark:text-white">
+              <img
+                class="w-24 h-24 mt-6"
+                src="../images/Play button.svg"
+                alt="Play button"
+              />
+              <p
+                class="text-base font-medium text-center text-gray-900 dark:text-white"
+              >
                 Play Demo
               </p>
             </div>
           </article>
-          
         </div>
         <div class="lg:mt-0 lg:col-span-5 lg:flex">
           <img
-            class="img-url"
-            src="https://s3-alpha-sig.figma.com/img/c8df/a631/2c2d8ae9f9373b8ebeb680371e67d3a1?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kASO3qjmJw6J5f7LS0Zddavz81W64wzUc046qqTR4GHtP3a6~6rp2RTEj3EAwh0SuPmw4XMuH2dCZ4jY7961-28HWA0bn2C~1rBYlZDpfuodZaDY0U6UodrDBFjs4n37LHm5ybjOeYNJ8xrmfH~64hayRXgYo-jQOTsvQOS2Qt4W9bpRjpDeedccQFmTGIbBFW5iEKKt9QoimaRdPKxpyKydYx4FbPQD3CiuXpD0R8TcNN1uEk666~pDsWEQ7Var-hk4b7ppy2mZPsyHUEhFER1Ot1Rl1QWpPR3tYIlLG3kDryJK-8TJhMVWVNztZ4~t63pLc~S8Tx8w0jHsXJKzRA__"
+            class="w-[632px] h-[615px] object-fit-cover"
+            src="https://cdn.prod.website-files.com/6170700f1a1db6b3a0ac16ed/617938cf58e87917dc7a61ec_woman-planes.png"
             alt="mockup"
           />
         </div>
@@ -202,17 +216,19 @@
     </section>
     <!-- main seaction 1 -->
     <section
-      class="max-w-screen-xl mx-auto flex flex-col justify-between items-center"
+      class="max-w-screen-xl mx-auto flex flex-col justify-between items-center mb-24"
     >
-      <article class="flex flex-col justify-center items-center mb-10 mr-6">
+      <article class="flex flex-col justify-center items-center mb-10">
         <p class="text-xl font-semibold text-gray-600 mb-2">Top Selling</p>
         <h2 class="text-5xl font-bold">Top Destinations</h2>
       </article>
       <!-- section 1 -->
-      <section class="ml-11 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+      <section
+        class="ml-11 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-24"
+      >
         <!-- card 1 -->
         <div
-          class="w-72 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-80 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
         >
           <img
             class="rounded-t-2xl w-full object-cover h-80"
@@ -239,7 +255,7 @@
         </div>
         <!-- card 2 -->
         <div
-          class="w-72 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-80 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
         >
           <img
             class="rounded-t-2xl w-full object-cover h-80"
@@ -266,7 +282,7 @@
         </div>
         <!-- card 3 -->
         <div
-          class="w-72 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          class="w-80 mb-6 border border-gray-50 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700"
         >
           <img
             class="rounded-t-2xl w-full object-cover h-80"
@@ -291,247 +307,288 @@
             </p>
           </div>
         </div>
-
-        <!-- test card -->
-        <div class="w-96">
-          <a href="#" class="block rounded-lg p-4 shadow-xs shadow-indigo-100">
-            <img
-              alt=""
-              src="../images/Rectangle 17.png"
-              class="h-56 w-full rounded-md object-cover"
-            />
-  
-            <div class="mt-2">
-              <dl>
-                <div>
-  
-                  <p class="text-base font-semibold text-gray-800">Trip To Greece</p>
-                </div>
-  
-                <div>
-  
-                  <p class="font-medium">123 Wallaby Avenue, Park Road</p>
-                </div>
-              </dl>
-  
-              <div class="mt-6 flex items-center gap-8 text-xs">
-                <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                  <svg
-                    class="size-4 text-indigo-700"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                    />
-                  </svg>
-  
-                  <div class="mt-1.5 sm:mt-0">
-                    <p class="text-gray-500">Parking</p>
-  
-                    <p class="font-medium">2 spaces</p>
-                  </div>
-                </div>
-  
-                <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-                  <svg
-                    class="size-4 text-indigo-700"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                    />
-                  </svg>
-  
-                  <div class="mt-1.5 sm:mt-0">
-                    <p class="text-gray-500">Bathroom</p>
-  
-                    <p class="font-medium">2 rooms</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
       </section>
     </section>
 
-    <!-- test card -->
-    <section class="py-20">
-      <div
-        class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3"
-      >
-        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
+    <!-- main section 2 -->
+    <section
+      class="max-w-screen-xl mx-auto flex flex-col xl:flex-row lg:flex-row justify-between items-center"
+    >
+      <section class="w-[50%]">
+        <p class="text-[#5E6282] text-base">Easy and Fast</p>
+        <h3 class="h1_hero_section text-[#14183E] text-[50px] font-semibold">
+          Book your next trip in 3 easy steps
+        </h3>
+        <!-- article 1 -->
+        <article class="flex gap-3 mb-10 mt-5">
+          <!-- icon -->
+          <div>
+            <img class="w-[47px] h-[48px]" src="../images/Group 7.svg" alt="" />
+          </div>
+          <div>
+            <h6 class="text-[#5E6282] text-lg font-semibold">
+              Choose Destination
+            </h6>
+            <p class="text-[#5E6282]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </article>
+        <!-- article 2 -->
+        <article class="flex gap-3 mb-10">
+          <!-- icon -->
+          <div>
+            <img
+              class="w-[47px] h-[48px]"
+              src="../images/Group 12.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h6 class="text-[#5E6282] text-lg font-semibold">Make Payment</h6>
+            <p class="text-[#5E6282]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </article>
+        <!-- article 3 -->
+        <article class="flex gap-3">
+          <!-- icon -->
+          <div>
+            <img
+              class="w-[47px] h-[48px]"
+              src="../images/Group 11.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h6 class="text-[#5E6282] text-lg font-semibold">
+              Reach Airport on Selected Date
+            </h6>
+            <p class="text-[#5E6282]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- card section 2 -->
+      <section class="relative">
+        <div
+          class="absolute gap-2 w-52 bottom-[20%] -right-20 inline-flex items-center rounded-lg bg-white p-2 shadow-md"
+        >
+          <div class="mb-5">
+            <img class="w-10 h-10" src="../images/Mask Group.svg" alt="" />
+          </div>
+          <div>
+            <p class="text-[#84829A] ml-1 text-xs mb-1">Ongoing</p>
+            <p class="text-[#080809] ml-1 text-sm font-semibold mb-2">
+              Trip to rome
+            </p>
+            <p class="ml-1 text-xs font-medium mb-1">
+              <span class="text-[#8a79df]">40%</span> completed
+            </p>
+            <p><span><img src="../images/Group 3.svg" alt=""></span></p>
+          </div>
+        </div>
+        <article
+          class="w-[340px] rounded-xl bg-white p-3 shadow-lg hover:shadow-xl"
+        >
           <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="Hotel Photo"
-              />
-              <div
-                class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <span class="text-slate-400 ml-1 text-sm">4.9</span>
-              </div>
+            <div class="flex items-end overflow-hidden rounded-xl">
+              <img src="../images/trip_to_greece.png" alt="Hotel Photo" />
             </div>
 
             <div class="mt-1 p-2">
-              <h2 class="text-slate-700">The Hilton Hotel</h2>
-              <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
+              <h2 class="text-slate-700 mb-2">Trip To Greece</h2>
+              <p class="text-slate-400 mt-1 text-sm mb-3">
+                14-29 June | by Robbin joseph
+              </p>
+              <div class="flex gap-3">
+                <span><img src="../images/LEAF.svg" alt="LEAF" /></span>
+                <span><img src="../images/map icon.svg" alt="map icon" /></span>
+                <span><img src="../images/send.svg" alt="send" /></span>
+              </div>
 
               <div class="mt-3 flex items-end justify-between">
-                <p>
-                  <span class="text-lg font-bold text-blue-500">$850</span>
-                  <span class="text-slate-400 text-sm">/night</span>
+                <p class="flex gap-3">
+                  <span class="text-lg font-bold text-blue-500"
+                    ><img src="../images/Group.svg" alt=""
+                  /></span>
+                  <span class="text-[#84829A] text-sm">24 people going</span>
                 </p>
 
-                <div
-                  class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="group-hover:text-blue-500 h-4 w-4 text-blue-400"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"
-                    />
-                  </svg>
+                <div class="group inline-flex rounded-xl p-2">
+                  <img
+                    class="w-4 h-4"
+                    src="../images/heart (6) 1.svg"
+                    alt="heart"
+                  />
                 </div>
               </div>
             </div>
           </a>
         </article>
-
-        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="Hotel Photo"
-              />
-              <div
-                class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <span class="text-slate-400 ml-1 text-sm">4.9</span>
-              </div>
-            </div>
-
-            <div class="mt-1 p-2">
-              <h2 class="text-slate-700">The Hilton Hotel</h2>
-              <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
-
-              <div class="mt-3 flex items-end justify-between">
-                <p>
-                  <span class="text-lg font-bold text-blue-500">$450</span>
-                  <span class="text-slate-400 text-sm">/night</span>
-                </p>
-
-                <div
-                  class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="group-hover:text-blue-500 h-4 w-4 text-blue-400"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="Hotel Photo"
-              />
-              <div
-                class="absolute bottom-3 left-3 inline-flex items-center rounded-lg bg-white p-2 shadow-md"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-yellow-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </svg>
-                <span class="text-slate-400 ml-1 text-sm">4.9</span>
-              </div>
-            </div>
-
-            <div class="mt-1 p-2">
-              <h2 class="text-slate-700">The Hilton Hotel</h2>
-              <p class="text-slate-400 mt-1 text-sm">Lisbon, Portugal</p>
-
-              <div class="mt-3 flex items-end justify-between">
-                <p>
-                  <span class="text-lg font-bold text-blue-500">$1,450</span>
-                  <span class="text-slate-400 text-sm">/night</span>
-                </p>
-
-                <div
-                  class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="group-hover:text-blue-500 h-4 w-4 text-blue-400"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
+      </section>
     </section>
+    <!--  -->
+    <!-- footer section -->
+    <section class="mx-auto mt-24 w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer
+        class="text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left"
+      >
+        <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+        <div class="py-10 text-start md:text-left">
+          <div class="grid-1 grid gap-8 md:grid-cols-1 lg:grid-cols-5">
+            <!-- TW Elements section -->
+            <div class="">
+              <h6
+                class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
+              >
+                <span class="me-3">
+                  <h1 class="text-4xl">Jadoo.</h1>
+                </span>
+              </h6>
+              <p>Book your trip in minute, get full control for much longer.</p>
+            </div>
+            <!-- Company section -->
+            <div class="ml-10">
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                Products
+              </h6>
+              <p class="mb-4">
+                <a href="#!">About</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Careers</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Mobile </a>
+              </p>
+            </div>
+            <!-- Contact section -->
+            <div >
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                Contact
+              </h6>
+              <p class="mb-4">
+                <a href="#!">Help / FAQ</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Press</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Affiliates</a>
+              </p>
+            </div>
+            <!-- More section -->
+            <div >
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                More
+              </h6>
+              <p class="mb-4">
+                <a href="#!">Airline fees </a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Airline</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Low fare tips </a>
+              </p>
+            </div>
+            <!-- Contact section -->
+            <div class="">
+              <div class="flex justify-center items-center">
+                <span
+                  ><img
+                    class="w-[65px] h-[66px]"
+                    src="../images/Social.svg"
+                    alt=""
+                /></span>
+                <span><img src="../images/Social (1).svg" alt="" /></span>
+                <span
+                  ><img
+                    class="w-12 h-12 border rounded-full border-gray-50 shadow-sm mb-2 ml-2"
+                    src="../images/twitter.svg"
+                    alt=""
+                /></span>
+              </div>
+              <p class="mb-4 flex items-center justify-center md:justify-start">
+                Discover our app
+              </p>
+              <!-- Google Play and App Store button -->
+              <div class="flex gap-2">
+                <!-- Google Play button -->
+                <button
+                  type="button"
+                  class="flex items-center justify-center w-[170px] mt-3 text-white bg-black rounded-3xl h-10 px-2"
+                >
+                  <div class="mr-2">
+                    <svg viewBox="30 336.7 120.9 129.2" class="w-4 h-4">
+                      <path
+                        fill="#FFD400"
+                        d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"
+                      ></path>
+                      <path
+                        fill="#FF3333"
+                        d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"
+                      ></path>
+                      <path
+                        fill="#48FF48"
+                        d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"
+                      ></path>
+                      <path
+                        fill="#3BCCFF"
+                        d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold">GET IT ON</div>
+                    <div class="-mt-1 text-[10px]">
+                      Google Play
+                    </div>
+                  </div>
+                </button>
+                <!-- App Store button -->
+                <button
+                  type="button"
+                  class="flex items-center justify-center w-[170px] mt-3 text-white bg-black rounded-3xl h-10 px-1"
+                >
+                  <div class="mr-1">
+                    <svg viewBox="0 0 384 512" class="w-5 h-5">
+                      <path
+                        fill="currentColor"
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[10px]">Avaiable on</div>
+                    <div class="-mt-1 font-semibold text-xs ">
+                      App Store
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="p-6 text-center">
+          <span>All rights reserved © jadoo.co</span>
+          
+        </div>
+      </footer>
+    </section>
+
+    
     <!-- CDN flowbite script -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>
