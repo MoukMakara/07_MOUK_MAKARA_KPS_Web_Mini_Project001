@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- CDN tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+
+    <!-- CDN Flobite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="w-full flex items-center justify-center">
+      <nav
+        class="fixed z-50 top-0 left-1/2 transform -translate-x-1/2 w-full max-w-screen-xl dark:bg-gray-900 dark:border-gray-700"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="index.html"
+            ><img
+              class="flex items-center cursor-pointer text-3xl font-bold space-x-3 rtl:space-x-reverse"
+              src="../images/Logo.png"
+              alt=""
+          /></a>
+          <button
+            data-collapse-toggle="navbar-dropdown"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex items-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="destination.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Desitnations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="hotels.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Hotels</a
+                >
+              </li>
+              <li>
+                <a
+                  href="flights.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Flights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="bookings.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Bookings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#login"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  type="button"
+                  class="text-gray-900 border border-gray-300 font-medium rounded-lg text-sm px-5 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                >
+                  Sign Up
+                </a>
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  EN
+                  <svg
+                    class="w-2.5 h-2.5 ms-2.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-gray-100 divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                >
+                  <ul
+                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    aria-labelledby="dropdownLargeButton"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        >KH</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section
+      class="relative top-20 h-[650px] w-full bg-cover bg-center flex flex-col items-center justify-center text-white px-4"
+      style="background-image: url('../images/hero_section2.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="relative z-10 mb-6">
+        <h2 class="font_poppins text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white">Enjoy in the best way</h2>
+        <h3 class="text-xl mt-2 text-center">Enjoy our services for your trip anytime</h3>
+      </div>
+      <div
+        class="relative z-10 w-4/5 p-4 rounded-lg shadow-lg bg-[rgba(255,255,255,0.2)]"
+      >
+        <div class="flex border-b">
+          <button
+            class="text-orange-500 font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
+          >
+            <i class="fa-solid fa-earth-americas mr-2"></i>Public Tours
+          </button>
+          <button
+            class="text-white px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
+          >
+            <i class="fas fa-users mr-2"></i> Private Tours
+          </button>
+        </div>
+
+        <div
+          class="flex justify-between gap-2 bg-white w-full p-5 rounded-tr-md rounded-b-md"
+        >
+          <div class="flex flex-col w-1/6">
+            <label class="font-semibold text-gray-700"
+              ><i class="fas fa-users mr-2"></i>Number of people</label
+            >
+            <select class="border-none outline-none p-2 text-gray-700 ml-5">
+              <option>Choose Number</option>
+            </select>
+          </div>
+          <div class="flex flex-col w-1/6">
+            <label class="font-semibold text-gray-700"
+              ><i class="fas fa-calendar-alt mr-2"></i> Date</label
+            >
+            <select class="border-none outline-none p-2 text-gray-700 ml-5">
+              <option>Choose Date</option>
+            </select>
+          </div>
+          <div class="flex flex-col w-1/6">
+            <label class="font-semibold text-gray-700"
+              ><i class="fas fa-clock mr-2"></i> Time</label
+            >
+            <select class="border-none outline-none p-2 text-gray-700 ml-5">
+              <option>Choose Time</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col w-1/6">
+            <label class="font-semibold text-gray-700"
+              ><i class="fas fa-map-signs mr-2"></i> Tour</label
+            >
+            <select class="border-none outline-none p-2 text-gray-700 ml-5">
+              <option>Select Tour</option>
+            </select>
+          </div>
+          <div class="flex flex-col w-1/5">
+            <label class="font-semibold text-gray-700"
+              ><i class="fas fa-car mr-2"></i> Transportation</label
+            >
+            <select class="border-none outline-none p-2 text-gray-700 ml-5">
+              <option>Select Transportation</option>
+            </select>
+          </div>
+          <div class="flex items-end">
+            <button
+              class="bg-[#FA8B02] text-white p-5 rounded-lg flex justify-center items-center gap-2"
+            >
+              <img src="../images/akar-icons_search.svg" class="w-5 h-5" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div
+      class="relative top-20 bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
+    >
+      <div class="absolute inset-0">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/7a5d/7b40/3a3df37fe37290185b54200d1e561297?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XQn3MkfdjJbgh-hIw0~atbZzUQk2zrYNgO-1EE2Pd1yEzR0KrW5DRHZEE2bpDb64N9CI5bBznEQNYdY7xLZ14u4UZe~j7tunQMoGQZEOlZ2iWTTfYDCEOKU9lJwvXujXmzwNVzhBD6RdcW~MlnanvCMFEXY4rHQNRi3aq8j-7p18Piw4F9BLiyLW9GOQQasNQa-LZzAPHdr1Wun6LSFk5Uhrp1ilWKA95RnXtzDlMZaGl0oNJLuRhgpAEMitMxXz2-~eW4yrvo2tGvf5Wd0pQR74~mk-odzY6xk8T~rlFQSNEy8twotc7X495YQAE8J7qUI-uLsneUZq8mwnYYpygA__"
+          alt="Background Image"
+          class="object-cover object-center w-full h-full"
+        />
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+      </div>
+
+      <div
+        class="relative z-10 flex flex-col items-center top-24 h-full text-start"
+      >
+        <h1 class="text-5xl font_poppins font-bold leading-tight mb-4">
+          Enjoy in the best way!
+        </h1>
+        <p class="text-lg text-gray-300 mb-8">
+          Enjoy our services for your trip anytime
+        </p>
+      </div>
+    </div> -->
+    <!-- category Find Popular Destination -->
+    <section
+      class="max-w-screen-2xl mx-auto flex flex-col justify-between items-center pt-32"
+    >
+      <article class="flex flex-col justify-center items-center mb-10">
+        <p class="text-xl font-semibold text-[#5E6282] mb-2">CATEGORY</p>
+        <h2 class="text-5xl text-[#14183E] font_poppins font-bold">
+          Find Popular Destination
+        </h2>
+      </article>
+      <div
+        class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4"
+      >
+        <!-- card 1 -->
+        <article
+          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
+        >
+          <a href="#">
+            <div class="relative flex items-end overflow-hidden rounded-xl">
+              <img
+                class="w-[370px] h-[247px] object-cover"
+                src="../images/card5.png"
+                alt="Hotel Photo"
+              />
+            </div>
+
+            <div class="mt-1 p-2">
+              <h2 class="text-[#2D3134] font-semibold">Mountain Hiking Tour</h2>
+              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <p>
+                  <span class="text-lg font-bold text-[#2D3134]">$89</span>
+                  <span class="text-[#5b5f62] text-sm">/Person</span>
+                </p>
+
+                <div>
+                  <button
+                    type="button"
+                    class="text-white bg-[#2D3134] border border-gray-300 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- card 2 -->
+        <article
+          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
+        >
+          <a href="#">
+            <div class="relative flex items-end overflow-hidden rounded-xl">
+              <img
+                class="w-[370px] h-[247px] object-cover"
+                src="../images/card6.png"
+                alt="Hotel Photo"
+              />
+            </div>
+
+            <div class="mt-1 p-2">
+              <h2 class="text-[#2D3134] font-semibold">Machu Picchu, Peru</h2>
+              <p class="text-[#5B5F62] mt-1 text-sm">Machu Picchu, Peru</p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <p>
+                  <span class="text-lg font-bold text-[#2D3134]">$99</span>
+                  <span class="text-[#5b5f62] text-sm">/Person</span>
+                </p>
+
+                <div>
+                  <button
+                    type="button"
+                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- card 3 -->
+        <article
+          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
+        >
+          <a href="#">
+            <div class="relative flex items-end overflow-hidden rounded-xl">
+              <img
+                class="w-[370px] h-[247px] object-cover"
+                src="../images/card7.png"
+                alt="Hotel Photo"
+              />
+            </div>
+
+            <div class="mt-1 p-2">
+              <h2 class="text-[#2D3134] font-semibold">
+                The Grand Canyon, Arizona
+              </h2>
+              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <p>
+                  <span class="text-lg font-bold text-[#2D3134]">$70</span>
+                  <span class="text-[#5b5f62] text-sm">/Person</span>
+                </p>
+
+                <div>
+                  <button
+                    type="button"
+                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+        <!-- card 4 -->
+        <article
+          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
+        >
+          <a href="#">
+            <div class="relative flex items-end overflow-hidden rounded-xl">
+              <img
+                class="w-[370px] h-[247px] object-cover"
+                src="../images/card8.png"
+                alt="Hotel Photo"
+              />
+            </div>
+
+            <div class="mt-1 p-2">
+              <h2 class="text-[#2D3134] font-semibold">Rome, Italy</h2>
+              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
+
+              <div class="mt-3 flex items-center justify-between">
+                <p>
+                  <span class="text-lg font-bold text-[#2D3134]">$99</span>
+                  <span class="text-[#5b5f62] text-sm">/Person</span>
+                </p>
+
+                <div>
+                  <button
+                    type="button"
+                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- storefront -->
+    <section
+      class="bg-white flex justify-center items-center dark:bg-gray-900 pt-16"
+    >
+      <div
+        class="mx-auto grid justify-center items-center max-w-screen-xl grid-cols-5 gap-20 px-4 text-gray-500 dark:text-gray-400"
+      >
+        <a href="#" class="">
+          <img src="../images/image 27.svg" alt="image 27" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/image 28.svg" alt="Image 3" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/image 30.svg" alt="Image 4" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/test.png" alt="Image 6" />
+        </a>
+        <a href="#" class="">
+          <img src="../images/image 31.svg" alt="Image 5" />
+        </a>
+      </div>
+    </section>
+
+    <!-- category Top Destination  -->
+    <section
+      class="max-w-screen-2xl mx-auto flex flex-col justify-between items-center pt-32"
+    >
+      <article class="flex flex-col justify-center items-center mb-10">
+        <p class="text-xl font-semibold text-[#5E6282] mb-2">CATEGORY</p>
+        <h2 class="text-5xl text-[#14183E] font_poppins font-bold">
+          Top Destination
+        </h2>
+      </article>
+      <!-- table  -->
+    </section>
+
+    <!-- footer section -->
+    <section class="mx-auto mt-24 w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer
+        class="text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left"
+      >
+        <!-- Main container div: holds the entire content of the footer, including four sections (TW Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+        <div class="py-10 text-start md:text-left">
+          <div class="grid-1 grid gap-8 md:grid-cols-1 lg:grid-cols-5">
+            <!-- TW Elements section -->
+            <div class="">
+              <h6
+                class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start"
+              >
+                <span class="me-3">
+                  <h1 class="text-4xl">Jadoo.</h1>
+                </span>
+              </h6>
+              <p>Book your trip in minute, get full control for much longer.</p>
+            </div>
+            <!-- Company section -->
+            <div class="ml-10">
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                Products
+              </h6>
+              <p class="mb-4">
+                <a href="#!">About</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Careers</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Mobile </a>
+              </p>
+            </div>
+            <!-- Contact section -->
+            <div>
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                Contact
+              </h6>
+              <p class="mb-4">
+                <a href="#!">Help / FAQ</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Press</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Affiliates</a>
+              </p>
+            </div>
+            <!-- More section -->
+            <div>
+              <h6
+                class="mb-4 flex justify-start font-semibold uppercase md:justify-start"
+              >
+                More
+              </h6>
+              <p class="mb-4">
+                <a href="#!">Airline fees </a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Airline</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Low fare tips </a>
+              </p>
+            </div>
+            <!-- Contact section -->
+            <div class="">
+              <div class="flex justify-center items-center">
+                <span
+                  ><img
+                    class="w-[65px] h-[66px]"
+                    src="../images/Social.svg"
+                    alt=""
+                /></span>
+                <span><img src="../images/Social (1).svg" alt="" /></span>
+                <span
+                  ><img
+                    class="w-12 h-12 border rounded-full border-gray-50 shadow-sm mb-2 ml-2"
+                    src="../images/twitter.svg"
+                    alt=""
+                /></span>
+              </div>
+              <p class="mb-4 flex items-center justify-center md:justify-start">
+                Discover our app
+              </p>
+              <!-- Google Play and App Store button -->
+              <div class="flex gap-2">
+                <!-- Google Play button -->
+                <button
+                  type="button"
+                  class="flex items-center justify-center w-[170px] mt-3 text-white bg-black rounded-3xl h-10 px-2"
+                >
+                  <div class="mr-2">
+                    <svg viewBox="30 336.7 120.9 129.2" class="w-4 h-4">
+                      <path
+                        fill="#FFD400"
+                        d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"
+                      ></path>
+                      <path
+                        fill="#FF3333"
+                        d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"
+                      ></path>
+                      <path
+                        fill="#48FF48"
+                        d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"
+                      ></path>
+                      <path
+                        fill="#3BCCFF"
+                        d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-semibold">GET IT ON</div>
+                    <div class="-mt-1 text-[10px]">Google Play</div>
+                  </div>
+                </button>
+                <!-- App Store button -->
+                <button
+                  type="button"
+                  class="flex items-center justify-center w-[170px] mt-3 text-white bg-black rounded-3xl h-10 px-1"
+                >
+                  <div class="mr-1">
+                    <svg viewBox="0 0 384 512" class="w-5 h-5">
+                      <path
+                        fill="currentColor"
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[10px]">Avaiable on</div>
+                    <div class="-mt-1 font-semibold text-xs">App Store</div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Copyright section-->
+        <div class="p-6 text-center">
+          <span>All rights reserved © jadoo.co</span>
+        </div>
+      </footer>
+    </section>
+    <!-- CDN flowbite script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
