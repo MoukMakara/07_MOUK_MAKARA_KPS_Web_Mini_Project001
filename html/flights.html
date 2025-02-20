@@ -17,6 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -161,7 +163,7 @@
       <div class="absolute inset-0 bg-black opacity-30"></div>
       <div class="relative z-10 mb-6">
         <h2
-          class="font_poppins text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white"
+          class="font_volkhov text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white"
         >
           Enjoy in the best way
         </h2>
@@ -174,14 +176,15 @@
       >
         <div class="flex border-b">
           <button
-            class="text-orange-500 font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
+            class="flex gap-1 text-[#FA8B02] font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
           >
-            <i class="fa-solid fa-earth-americas mr-2"></i>Public Tours
+            <img src="../images/icon_wolrd.svg" alt="" />Public Tours
           </button>
           <button
-            class="text-white px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
+            class="flex gap-1 text-[#FFFFFF] px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
           >
-            <i class="fas fa-users mr-2"></i> Private Tours
+            <img src="../images/icon_private_tours_white.svg" alt="" /> Private
+            Tours
           </button>
         </div>
 
@@ -189,24 +192,30 @@
           class="flex justify-between gap-2 bg-white w-full p-5 rounded-tr-md rounded-b-md"
         >
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-users mr-2"></i>Number of people</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_private_tours_black.svg" alt="" />Number
+              of people</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Number</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-calendar-alt mr-2"></i> Date</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img
+                src="../images/system-uicons_calendar-month (1).svg"
+                alt=""
+              />
+              Date</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Date</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-clock mr-2"></i> Time</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/system-uicons_clock.svg" alt="" />
+              Time</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Time</option>
@@ -214,16 +223,16 @@
           </div>
 
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-map-signs mr-2"></i> Tour</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon _tour.svg" alt="" /> Tour</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Tour</option>
             </select>
           </div>
           <div class="flex flex-col w-1/5">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-car mr-2"></i> Transportation</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_car.svg" alt="" /> Transportation</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Transportation</option>
@@ -246,7 +255,7 @@
 
     <!-- main seaction 1 -->
     <article class="flex justify-start items-start mt-36 ml-16">
-      <h2 class="text-3xl text-[#14183E] font_poppins font-bold">
+      <h2 class="text-3xl text-[#14183E] font_volkhov font-bold">
         Tour Packages
       </h2>
     </article>
@@ -656,63 +665,62 @@
               <div class="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
                   <label
-                    for="first_name"
+                    for="Name and Surname"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >First name</label
+                    >Name and Surname</label
                   >
                   <input
                     type="text"
-                    id="first_name"
+                    id="Name and Surname"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="John"
+                    placeholder="Enter your name and surname"
                     required
                   />
                 </div>
                 <div>
                   <label
-                    for="email"
+                    for="Email Address"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Email address</label
+                    >Email Address</label
                   >
                   <input
                     type="email"
                     id="email"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="john.doe@company.com"
+                    placeholder="Enter your email address"
                     required
                   />
                 </div>
 
                 <div>
                   <label
-                    for="phone"
+                    for="Telephone Number"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Phone number</label
+                    >Telephone Number</label
                   >
                   <input
                     type="tel"
                     id="phone"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="123-45-678"
-                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    class="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Enter your telephone number"
                     required
                   />
                 </div>
                 <div>
                   <label
-                    for="countries"
+                    for="Service Type"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Select an option</label
+                    >Service Type</label
                   >
                   <select
-                    id="countries"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    id="Service Type"
+                    class="bg-gray-50 text-[#777777] border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   >
-                    <option selected>Choose a country</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
+                    <option selected>Select the service types</option>
+                    <option value="US">service types 1</option>
+                    <option value="CA">service types 2</option>
+                    <option value="FR">service types 3</option>
+                    <option value="DE">service types 4</option>
                   </select>
                 </div>
 
@@ -725,52 +733,32 @@
                   <div
                     class="absolute top-10 end-3 flex items-center ps-3.5 pointer-events-none"
                   >
-                    <svg
-                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                      />
-                    </svg>
+                  <img src="../images/system-uicons_calendar-month (1).svg" alt="">
                   </div>
                   <input
                     datepicker
                     id="default-datepicker"
                     type="text"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-1 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Select date"
                   />
                 </div>
                 <div class="relative max-w-sm">
                   <label
-                    for="date"
+                    for="time"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >Date</label
+                    >Time</label
                   >
                   <div
                     class="absolute top-10 end-3 flex items-center ps-3.5 pointer-events-none"
                   >
-                    <svg
-                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
-                      />
-                    </svg>
+                    <img src="../images/system-uicons_clock.svg" alt="">
                   </div>
                   <input
-                    datepicker
-                    id="default-datepicker"
+                  timepicker
+                    id="default-timepicker"
                     type="text"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-1 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="Select date"
                   />
                 </div>

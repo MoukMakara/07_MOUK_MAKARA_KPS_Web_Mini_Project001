@@ -17,6 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -160,7 +162,7 @@
       <div class="absolute inset-0 bg-black opacity-30"></div>
       <div class="relative z-10 mb-6">
         <h2
-          class="font_poppins text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white"
+          class="font_volkhov text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white"
         >
           Enjoy in the best way
         </h2>
@@ -173,14 +175,15 @@
       >
         <div class="flex border-b">
           <button
-            class="text-orange-500 font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
+            class="flex gap-1 text-[#FA8B02] font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
           >
-            <i class="fa-solid fa-earth-americas mr-2"></i>Public Tours
+            <img src="../images/icon_wolrd.svg" alt="" />Public Tours
           </button>
           <button
-            class="text-white px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
+            class="flex gap-1 text-[#FFFFFF] px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
           >
-            <i class="fas fa-users mr-2"></i> Private Tours
+            <img src="../images/icon_private_tours_white.svg" alt="" /> Private
+            Tours
           </button>
         </div>
 
@@ -188,24 +191,30 @@
           class="flex justify-between gap-2 bg-white w-full p-5 rounded-tr-md rounded-b-md"
         >
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-users mr-2"></i>Number of people</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_private_tours_black.svg" alt="" />Number
+              of people</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Number</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-calendar-alt mr-2"></i> Date</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img
+                src="../images/system-uicons_calendar-month (1).svg"
+                alt=""
+              />
+              Date</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Date</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-clock mr-2"></i> Time</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/system-uicons_clock.svg" alt="" />
+              Time</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Time</option>
@@ -213,16 +222,16 @@
           </div>
 
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-map-signs mr-2"></i> Tour</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon _tour.svg" alt="" /> Tour</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Tour</option>
             </select>
           </div>
           <div class="flex flex-col w-1/5">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-car mr-2"></i> Transportation</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_car.svg" alt="" /> Transportation</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Transportation</option>
@@ -244,15 +253,31 @@
     </section>
 
     <!-- Best deal Hotel section -->
-    <article class="max-w-screen-xl mx-auto flex flex-col justify-between mb-10 mt-36">
-      <h1 class="text-5xl font-bold">Best Deal Hotels</h1>
+    <article
+      class="max-w-screen-xl mx-auto flex flex-col justify-between mb-10 mt-36"
+    >
+      <h1 class="text-5xl font_volkhov flex gap-2 font-bold">
+        <img src="../images/fier.svg" alt="" />Best Deal Hotels
+      </h1>
       <div class="flex justify-between items-center">
         <p class="text-[#737373] text-lg">
           Quality as judged by customers. Book at the ideal price!
         </p>
-        <div >
-          <p class="w-[40px] h-[40px] bg-[#FA8B02]"><img src="../images/arrow_left.svg" alt=""></p>
-          <p><img src="../images/arrow_right.svg" alt=""></p>
+        <div class="flex gap-2">
+          <p class="relative w-[40px] h-[40px] bg-[#FA8B02] rounded-full">
+            <img
+              class="absolute top-3 left-3"
+              src="../images/arrow_left.svg"
+              alt=""
+            />
+          </p>
+          <p class="relative w-[40px] h-[40px] bg-[#FA8B02] rounded-full">
+            <img
+              class="absolute top-3 left-3"
+              src="../images/arrow_right.svg"
+              alt=""
+            />
+          </p>
         </div>
       </div>
     </article>
@@ -269,7 +294,7 @@
           <!-- Image Section -->
           <div class="relative">
             <img
-              src="../images/img-hotel.png.png"
+              src="../images/img-hotel1.png"
               alt="Resort"
               class="w-[273px] h-full object-cover"
             />
@@ -351,7 +376,7 @@
           <!-- Image Section -->
           <div class="relative">
             <img
-              src="../images/img-hotel.png.png"
+              src="../images/img-hotel2.png"
               alt="Resort"
               class="w-[273px] h-full object-cover"
             />
@@ -369,8 +394,8 @@
           >
             <!-- Tag -->
             <span
-              class="bg-[#FFF0EC] text-[#000000] px-3 py-1.5 text-xs rounded-full"
-              >Luxury</span
+              class="bg-[#E4F9F9] text-[#000000] px-3 py-1.5 text-xs rounded-full"
+              >family</span
             >
 
             <!-- Hotel Name -->
@@ -414,7 +439,7 @@
             <div
               class="absolute top-2 z-20 right-5 text-black text-xs font-bold px-3 rounded-bl-lg"
             >
-              -25%
+              -28%
             </div>
             <div
               class="absolute top-0 z-10 right-3 text-black text-xs font-bold px-3 rounded-bl-lg"
@@ -433,7 +458,7 @@
           <!-- Image Section -->
           <div class="relative">
             <img
-              src="../images/img-hotel.png.png"
+              src="../images/img-hotel3.png"
               alt="Resort"
               class="w-[273px] h-full object-cover"
             />
@@ -451,8 +476,8 @@
           >
             <!-- Tag -->
             <span
-              class="bg-[#FFF0EC] text-[#000000] px-3 py-1.5 text-xs rounded-full"
-              >Luxury</span
+              class="bg-[#E3F0FF] text-[#000000] px-3 py-1.5 text-xs rounded-full"
+              >Business</span
             >
 
             <!-- Hotel Name -->
@@ -496,7 +521,7 @@
             <div
               class="absolute top-2 z-20 right-5 text-black text-xs font-bold px-3 rounded-bl-lg"
             >
-              -25%
+              -27%
             </div>
             <div
               class="absolute top-0 z-10 right-3 text-black text-xs font-bold px-3 rounded-bl-lg"
@@ -515,7 +540,7 @@
           <!-- Image Section -->
           <div class="relative">
             <img
-              src="../images/img-hotel.png.png"
+              src="../images/img-hotel4.png"
               alt="Resort"
               class="w-[273px] h-full object-cover"
             />
@@ -533,8 +558,8 @@
           >
             <!-- Tag -->
             <span
-              class="bg-[#FFF0EC] text-[#000000] px-3 py-1.5 text-xs rounded-full"
-              >Luxury</span
+              class="bg-[#FCFCF3] text-[#000000] px-3 py-1.5 text-xs rounded-full"
+              >Stardard</span
             >
 
             <!-- Hotel Name -->
@@ -578,7 +603,7 @@
             <div
               class="absolute top-2 z-20 right-5 text-black text-xs font-bold px-3 rounded-bl-lg"
             >
-              -25%
+              -35%
             </div>
             <div
               class="absolute top-0 z-10 right-3 text-black text-xs font-bold px-3 rounded-bl-lg"
@@ -590,6 +615,422 @@
             </div>
           </div>
         </div>
+      </section>
+    </section>
+
+    <!-- Top Rated Hotels section -->
+    <article
+      class="max-w-screen-xl mx-auto flex flex-col justify-between mb-10 mt-36"
+    >
+      <h1 class="text-5xl font_volkhov font-bold">Top Rated Hotels</h1>
+      <div class="flex justify-between items-center">
+        <p class="text-[#737373] text-lg">
+          Quality as judged by customers. Book at the ideal price!
+        </p>
+        <div class="flex gap-2">
+          <!-- button -->
+          <button
+            class="mt-3 gap-2 flex items-center bg-[#FA8B02] text-[#FFFFFF] px-4 py-3 text-[14px] font-normal rounded-3xl hover:bg-gray-300"
+          >
+            View More
+            <span class=""><img src="../images/arrow_right.svg" alt="" /></span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <section
+      class="max-w-screen-2xl mx-auto pl-[119px] overflow-auto scrollbar-hide flex justify-start items-center mt-5"
+    >
+      <!-- all card -->
+      <div class="flex gap-5">
+        <!-- card 1 -->
+        <div class="w-[400px] h-[557px] rounded-2xl overflow-hidden">
+          <div class="relative">
+            <img
+              src="../images/img-hotel5.png"
+              alt="Tour Image"
+              class="w-full h-[326px] object-cover"
+            />
+            <p
+              class="absolute top-3 right-3 bg-[#FFFFFFD1] p-2 rounded-full shadow-md"
+            >
+              <img src="../images/SVG.svg" alt="" />
+            </p>
+          </div>
+          <!-- Details Section -->
+          <div
+            class="relative px-4 py-5 bg-[#ffffff] border border-[#E4E6E8] rounded-3xl shadow-sm bottom-5 z-20"
+          >
+            <div
+              class="absolute right-5 -top-4 border border-[#E4E6E8] flex items-center text-sm bg-[#FFFFFF] shadow-sm px-3 py-1.5 rounded-3xl text-gray-600 mb-2"
+            >
+              <p
+                class="text-[#000000] flex justify-center items-center text-[14px] gap-1"
+              >
+                <span
+                  ><img
+                    class="w-[11px] h-[11px]"
+                    src="../images/start_yellow.svg"
+                    alt=""
+                /></span>
+                4.96
+              </p>
+              <p class="ml-2 text-[#737373] text-[14px]">(672 reviews)</p>
+            </div>
+
+            <h2 class="text-[24px] font-semibold mt-5">
+              California Sunset/Twilight Boat Cruise
+            </h2>
+
+            <div class="flex justify-between items-center mt-2">
+              <!-- Location -->
+              <p class="text-gray-500 text-[16px] flex items-center">
+                <span
+                  ><img class="mr-2" src="../images/Vector.svg" alt=""
+                /></span>
+                Manchester, England
+              </p>
+
+              <!-- Ratings -->
+              <div class="flex text-yellow-500 text-lg mt-1 gap-1">
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+              </div>
+            </div>
+            <div class="flex justify-between mt-8">
+              <!-- Price -->
+              <div class="text-[24px] font-bold mt-2">
+                $148.25 <span class="text-gray-500 text-[16px]">/ person</span>
+              </div>
+
+              <!-- Book Now Button -->
+              <button
+                class="mt-3 bg-[#E4E6E8] px-4 py-2 text-[14px] font-semibold rounded-3xl hover:bg-gray-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-[400px] h-[557px] rounded-2xl overflow-hidden">
+          <div class="relative">
+            <img
+              src="../images/img-hotel6.png"
+              alt="Tour Image"
+              class="w-full h-[326px] object-cover"
+            />
+            <p
+              class="absolute top-3 right-3 bg-[#FFFFFFD1] p-2 rounded-full shadow-md"
+            >
+              <img src="../images/SVG.svg" alt="" />
+            </p>
+          </div>
+          <!-- Details Section -->
+          <div
+            class="relative px-4 py-5 bg-[#ffffff] border border-[#E4E6E8] rounded-3xl shadow-sm bottom-5 z-20"
+          >
+            <div
+              class="absolute right-5 -top-4 border border-[#E4E6E8] flex items-center text-sm bg-[#FFFFFF] shadow-sm px-3 py-1.5 rounded-3xl text-gray-600 mb-2"
+            >
+              <p
+                class="text-[#000000] flex justify-center items-center text-[14px] gap-1"
+              >
+                <span
+                  ><img
+                    class="w-[11px] h-[11px]"
+                    src="../images/start_yellow.svg"
+                    alt=""
+                /></span>
+                4.96
+              </p>
+              <p class="ml-2 text-[#737373] text-[14px]">(672 reviews)</p>
+            </div>
+
+            <h2 class="text-[24px] font-semibold mt-5">
+              NYC: Food Tastings and Culture Tour
+            </h2>
+
+            <div class="flex justify-between items-center mt-2">
+              <!-- Location -->
+              <p class="text-gray-500 text-[16px] flex items-center">
+                <span
+                  ><img class="mr-2" src="../images/Vector.svg" alt=""
+                /></span>
+                Manchester, England
+              </p>
+
+              <!-- Ratings -->
+              <div class="flex text-yellow-500 text-lg mt-1 gap-1">
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+              </div>
+            </div>
+            <div class="flex justify-between mt-8">
+              <!-- Price -->
+              <div class="text-[24px] font-bold mt-2">
+                $17.32 <span class="text-gray-500 text-[16px]">/ person</span>
+              </div>
+
+              <!-- Book Now Button -->
+              <button
+                class="mt-3 bg-[#E4E6E8] px-4 py-2 text-[14px] font-semibold rounded-3xl hover:bg-gray-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-[400px] h-[557px] rounded-2xl overflow-hidden">
+          <div class="relative">
+            <img
+              src="../images/img-hotel7.png"
+              alt="Tour Image"
+              class="w-full h-[326px] object-cover"
+            />
+            <p
+              class="absolute top-3 right-3 bg-[#FFFFFFD1] p-2 rounded-full shadow-md"
+            >
+              <img src="../images/SVG.svg" alt="" />
+            </p>
+          </div>
+          <!-- Details Section -->
+          <div
+            class="relative px-4 py-5 bg-[#ffffff] border border-[#E4E6E8] rounded-3xl shadow-sm bottom-5 z-20"
+          >
+            <div
+              class="absolute right-5 -top-4 border border-[#E4E6E8] flex items-center text-sm bg-[#FFFFFF] shadow-sm px-3 py-1.5 rounded-3xl text-gray-600 mb-2"
+            >
+              <p
+                class="text-[#000000] flex justify-center items-center text-[14px] gap-1"
+              >
+                <span
+                  ><img
+                    class="w-[11px] h-[11px]"
+                    src="../images/start_yellow.svg"
+                    alt=""
+                /></span>
+                4.96
+              </p>
+              <p class="ml-2 text-[#737373] text-[14px]">(672 reviews)</p>
+            </div>
+
+            <h2 class="text-[24px] font-semibold mt-5">
+              Grand Canyon Horseshoe Bend 2 days
+            </h2>
+
+            <div class="flex justify-between items-center mt-2">
+              <!-- Location -->
+              <p class="text-gray-500 text-[16px] flex items-center">
+                <span
+                  ><img class="mr-2" src="../images/Vector.svg" alt=""
+                /></span>
+                Manchester, England
+              </p>
+
+              <!-- Ratings -->
+              <div class="flex text-yellow-500 text-lg mt-1 gap-1">
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+              </div>
+            </div>
+            <div class="flex justify-between mt-8">
+              <!-- Price -->
+              <div class="text-[24px] font-bold mt-2">
+                $15.63 <span class="text-gray-500 text-[16px]">/ person</span>
+              </div>
+
+              <!-- Book Now Button -->
+              <button
+                class="mt-3 bg-[#E4E6E8] px-4 py-2 text-[14px] font-semibold rounded-3xl hover:bg-gray-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="w-[400px] h-[557px] rounded-2xl overflow-hidden">
+          <div class="relative">
+            <img
+              src="../images/img-hotel8.png"
+              alt="Tour Image"
+              class="w-full h-[326px] object-cover"
+            />
+            <p
+              class="absolute top-3 right-3 bg-[#FFFFFFD1] p-2 rounded-full shadow-md"
+            >
+              <img src="../images/SVG.svg" alt="" />
+            </p>
+          </div>
+          <!-- Details Section -->
+          <div
+            class="relative px-4 py-5 bg-[#ffffff] border border-[#E4E6E8] rounded-3xl shadow-sm bottom-5 z-20"
+          >
+            <div
+              class="absolute right-5 -top-4 border border-[#E4E6E8] flex items-center text-sm bg-[#FFFFFF] shadow-sm px-3 py-1.5 rounded-3xl text-gray-600 mb-2"
+            >
+              <p
+                class="text-[#000000] flex justify-center items-center text-[14px] gap-1"
+              >
+                <span
+                  ><img
+                    class="w-[11px] h-[11px]"
+                    src="../images/start_yellow.svg"
+                    alt=""
+                /></span>
+                4.96
+              </p>
+              <p class="ml-2 text-[#737373] text-[14px]">(672 reviews)</p>
+            </div>
+
+            <h2 class="text-[24px] font-semibold mt-5">
+              California Sunset/Twilight Boat Cruise
+            </h2>
+
+            <div class="flex justify-between items-center mt-2">
+              <!-- Location -->
+              <p class="text-gray-500 text-[16px] flex items-center">
+                <span
+                  ><img class="mr-2" src="../images/Vector.svg" alt=""
+                /></span>
+                Manchester, England
+              </p>
+
+              <!-- Ratings -->
+              <div class="flex text-yellow-500 text-lg mt-1 gap-1">
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+                <span><img src="../images/star-black.svg.svg" alt="" /></span>
+              </div>
+            </div>
+            <div class="flex justify-between mt-8">
+              <!-- Price -->
+              <div class="text-[24px] font-bold mt-2">
+                $48.25 <span class="text-gray-500 text-[16px]">/ person</span>
+              </div>
+
+              <!-- Book Now Button -->
+              <button
+                class="mt-3 bg-[#E4E6E8] px-4 py-2 text-[14px] font-semibold rounded-3xl hover:bg-gray-300"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main section Testimonials -->
+    <section class="max-w-6xl mx-auto pt-24">
+      <article class="flex flex-col justify-center items-center mb-16">
+        <article class="w-[180px]">
+          <div
+            class="flex items-center space-x-2 bg-[#FA8B02] text-white px-2 py-2 rounded-full shadow-lg"
+          >
+            <!-- Avatar Images -->
+            <div class="flex -space-x-4">
+              <img
+                class="w-7 h-7 rounded-full border-2 object-cover border-white"
+                src="../images/testimonials_profile1.webp"
+                alt="User 1"
+              />
+              <img
+                class="w-7 h-7 rounded-full border-2 object-cover border-white"
+                src="../images/testimonials_profile2.webp"
+                alt="User 2"
+              />
+              <img
+                class="w-7 h-7 rounded-full border-2 object-cover border-white"
+                src="../images/testimonials_profile3.webp"
+                alt="User 3"
+              />
+            </div>
+            <!-- Text -->
+            <span class="font-medium">Testimonials</span>
+          </div>
+        </article>
+        <h2 class="text-5xl text-[#14183E] font_volkhov font-bold mt-5">
+          Don't take our word for it
+        </h2>
+      </article>
+      <!-- section Testimonials -->
+      <!-- image section -->
+      <section class="flex justify-between items-center">
+        <section class="">
+          <img
+            class="w-[427px] h-[364px]"
+            src="https://s3-alpha-sig.figma.com/img/134a/7796/6a497a727ea4ef7b061c61dc22acae17?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ljchSVaWrAtO4n9LAlT2DXiBxAZjiIn1YWBgh7DXgTkSZJJzX70giEoIzf0~jfCBgPn2dXWU18zKX-7lpUSn1Nu6QeynlrOYcOylzW68WQ2tewdIz0yv4nL5xDxG791dmvUSj9-iO7mN2t2iJ5Vk1ZChPQJ6iAX8tOChHotq6CTmw~vH9~cRlioJbTpQ2SvcsZdehym0FJ5njZZatmn4bxc6dZSxah4zYmmvFBF3IoOaVUhuwFjLWgJ6RXYTiAOShVCjax4-QA-JGWAgdMquxg3DsksoKOb1RtGEPNL-MDMf5Xx1mET3u0Dc7SvZGYhO49ksGymV5fQXCV~15x7Buw__"
+            alt=""
+          />
+        </section>
+        <!-- card review section -->
+        <section
+          class="relative rounded-3xl bg-[#FFFFFF] p-8 border border-[#E4E6E8] shadow-xl"
+        >
+          <section class="w-[500px]">
+            <h2 class="text-[20px] font-bold mb-2">
+              The best booking system
+            </h2>
+            <p class="text-gray-700 leading-[24px]">
+              I've been using the hotel booking system for several years now,
+              and it's become my go-to platform for planning my trips. The
+              interface is user-friendly, and I appreciate the detailed
+              information and real-time availability of hotels.
+            </p>
+
+            <div class="flex justify-between items-center mt-7">
+              <div class="flex items-center gap-4">
+                <img
+                  alt=""
+                  src="../images/Sara Mohamedjpeg.jpeg"
+                  class="size-14 rounded-full object-cover"
+                />
+
+                <div class="flex justify-between items-center">
+                  <div class="flex flex-col">
+                    <h1 class="text-[18px] text-[#000000] font-semibold">Sara Mohamed</h1>
+                    <p class="mt-0.5 text-[14px] text-[#000000] font-medium ">
+                      Jakatar
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Ratings -->
+              <div class="flex text-yellow-500 text-lg mt-1 gap-1">
+                <span><img src="../images/start_yellow.svg" alt="" /></span>
+                <span><img src="../images/start_yellow.svg" alt="" /></span>
+                <span><img src="../images/start_yellow.svg" alt="" /></span>
+                <span><img src="../images/start_yellow.svg" alt="" /></span>
+                <span><img src="../images/start_yellow.svg" alt="" /></span>
+              </div>
+            </div>
+          </section>
+
+          <div class="absolute -left-12 top-[50%] flex gap-2">
+            <button class="w-[40px] h-[40px] bg-[#E4E6E8] rounded-full">
+              <img class="ml-3" src="../images/arrow_left_black.svg" alt="" />
+            </button>
+          </div>
+          <div class="absolute -right-12 top-[50%] flex gap-2">
+            <button class="w-[40px] h-[40px] bg-[#E4E6E8] rounded-full">
+              <img class="ml-3" src="../images/arrow_right_black.svg" alt="" />
+            </button>
+          </div>
+        </section>
       </section>
     </section>
 

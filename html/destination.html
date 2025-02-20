@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destination</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="../css/style.css" />
+
     <!-- CDN tailwind css -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
@@ -19,6 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -162,22 +163,29 @@
     >
       <div class="absolute inset-0 bg-black opacity-30"></div>
       <div class="relative z-10 mb-6">
-        <h2 class="font_poppins text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white">Enjoy in the best way</h2>
-        <h3 class="text-xl mt-2 text-center">Enjoy our services for your trip anytime</h3>
+        <h2
+          class="font_volkhov text-white mb-4 font-bold text-7xl xl:text-4xl sm:text-4xl dark:text-white"
+        >
+          Enjoy in the best way
+        </h2>
+        <h3 class="text-xl mt-2 text-center">
+          Enjoy our services for your trip anytime
+        </h3>
       </div>
       <div
         class="relative z-10 w-4/5 p-4 rounded-lg shadow-lg bg-[rgba(255,255,255,0.2)]"
       >
         <div class="flex border-b">
           <button
-            class="text-orange-500 font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
+            class="flex gap-1 text-[#FA8B02] font-semibold px-4 py-2 border-none bg-white rounded-tl-md"
           >
-            <i class="fa-solid fa-earth-americas mr-2"></i>Public Tours
+            <img src="../images/icon_wolrd.svg" alt="" />Public Tours
           </button>
           <button
-            class="text-white px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
+            class="flex gap-1 text-[#FFFFFF] px-4 py-2 bg-[rgba(255,255,255,0.4)] border-none rounded-tr-md"
           >
-            <i class="fas fa-users mr-2"></i> Private Tours
+            <img src="../images/icon_private_tours_white.svg" alt="" /> Private
+            Tours
           </button>
         </div>
 
@@ -185,24 +193,25 @@
           class="flex justify-between gap-2 bg-white w-full p-5 rounded-tr-md rounded-b-md"
         >
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-users mr-2"></i>Number of people</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_private_tours_black.svg" alt="" />Number
+              of people</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Number</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-calendar-alt mr-2"></i> Date</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/system-uicons_calendar-month (1).svg" alt=""> Date</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Date</option>
             </select>
           </div>
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-clock mr-2"></i> Time</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/system-uicons_clock.svg" alt=""> Time</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Choose Time</option>
@@ -210,16 +219,16 @@
           </div>
 
           <div class="flex flex-col w-1/6">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-map-signs mr-2"></i> Tour</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon _tour.svg" alt=""> Tour</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Tour</option>
             </select>
           </div>
           <div class="flex flex-col w-1/5">
-            <label class="font-semibold text-gray-700"
-              ><i class="fas fa-car mr-2"></i> Transportation</label
+            <label class="flex gap-1 font-semibold text-gray-700"
+              ><img src="../images/icon_car.svg" alt=""> Transportation</label
             >
             <select class="border-none outline-none p-2 text-gray-700 ml-5">
               <option>Select Transportation</option>
@@ -229,192 +238,198 @@
             <button
               class="bg-[#FA8B02] text-white p-5 rounded-lg flex justify-center items-center gap-2"
             >
-              <img src="../images/akar-icons_search.svg" class="w-5 h-5" alt="">
+              <img
+                src="../images/akar-icons_search.svg"
+                class="w-5 h-5"
+                alt=""
+              />
             </button>
           </div>
         </div>
       </div>
     </section>
-    <!-- <div
-      class="relative top-20 bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden"
-    >
-      <div class="absolute inset-0">
-        <img
-          src="https://s3-alpha-sig.figma.com/img/7a5d/7b40/3a3df37fe37290185b54200d1e561297?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XQn3MkfdjJbgh-hIw0~atbZzUQk2zrYNgO-1EE2Pd1yEzR0KrW5DRHZEE2bpDb64N9CI5bBznEQNYdY7xLZ14u4UZe~j7tunQMoGQZEOlZ2iWTTfYDCEOKU9lJwvXujXmzwNVzhBD6RdcW~MlnanvCMFEXY4rHQNRi3aq8j-7p18Piw4F9BLiyLW9GOQQasNQa-LZzAPHdr1Wun6LSFk5Uhrp1ilWKA95RnXtzDlMZaGl0oNJLuRhgpAEMitMxXz2-~eW4yrvo2tGvf5Wd0pQR74~mk-odzY6xk8T~rlFQSNEy8twotc7X495YQAE8J7qUI-uLsneUZq8mwnYYpygA__"
-          alt="Background Image"
-          class="object-cover object-center w-full h-full"
-        />
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-      </div>
-
-      <div
-        class="relative z-10 flex flex-col items-center top-24 h-full text-start"
-      >
-        <h1 class="text-5xl font_poppins font-bold leading-tight mb-4">
-          Enjoy in the best way!
-        </h1>
-        <p class="text-lg text-gray-300 mb-8">
-          Enjoy our services for your trip anytime
-        </p>
-      </div>
-    </div> -->
     <!-- category Find Popular Destination -->
-    <section
-      class="max-w-screen-2xl mx-auto flex flex-col justify-between items-center pt-32"
-    >
+    <div class="pt-32">
       <article class="flex flex-col justify-center items-center mb-10">
         <p class="text-xl font-semibold text-[#5E6282] mb-2">CATEGORY</p>
-        <h2 class="text-5xl text-[#14183E] font_poppins font-bold">
+        <h2 class="text-5xl text-[#14183E] font_volkhov font-bold">
           Find Popular Destination
         </h2>
       </article>
-      <div
-        class="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-3 lg:grid-cols-4"
+
+      <section
+        class="max-w-screen-2xl mx-auto pl-[119px] overflow-auto scrollbar-hide flex justify-start items-center mt-5"
       >
-        <!-- card 1 -->
-        <article
-          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
-        >
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                class="w-[370px] h-[247px] object-cover"
-                src="../images/card5.png"
-                alt="Hotel Photo"
-              />
-            </div>
+        <!-- all card -->
+        <div class="flex gap-5">
+          <!-- card 1 -->
+          <div
+            class="w-[386px] h-[440px] rounded-xl border-2 border-[#FFFFFF] overflow-hidden bg-[#C0BCA138] p-3"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="w-full h-[252px] object-cover"
+                  src="../images/card5.png"
+                  alt="Hotel Photo"
+                />
+              </div>
 
-            <div class="mt-1 p-2">
-              <h2 class="text-[#2D3134] font-semibold">Mountain Hiking Tour</h2>
-              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
-
-              <div class="mt-3 flex items-center justify-between">
-                <p>
-                  <span class="text-lg font-bold text-[#2D3134]">$89</span>
-                  <span class="text-[#5b5f62] text-sm">/Person</span>
+              <div class="mt-2 p-2">
+                <h2 class="text-[#2D3134] font-semibold text-[24px]">
+                  Mountain Hiking Tour
+                </h2>
+                <p class="text-[#5B5F62] mt-1 text-[14px]">
+                  Mountain Hiking Tour
                 </p>
 
-                <div>
-                  <button
-                    type="button"
-                    class="text-white bg-[#2D3134] border border-gray-300 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  >
-                    Book Now
-                  </button>
+                <div class="mt-4 flex items-center justify-between">
+                  <p>
+                    <span class="text-[24px] font-bold text-[#2D3134]"
+                      >$89</span
+                    >
+                    <span class="text-[#5b5f62] text-sm">/Person</span>
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="text-white bg-[#2D3134] border border-gray-300 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <!-- card 2 -->
-        <article
-          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
-        >
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                class="w-[370px] h-[247px] object-cover"
-                src="../images/card6.png"
-                alt="Hotel Photo"
-              />
-            </div>
+            </a>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="w-[386px] h-[440px] rounded-xl border-2 border-[#FFFFFF] overflow-hidden bg-[#C0BCA138] p-3"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="w-full h-[252px] object-cover"
+                  src="../images/card6.png"
+                  alt="Hotel Photo"
+                />
+              </div>
 
-            <div class="mt-1 p-2">
-              <h2 class="text-[#2D3134] font-semibold">Machu Picchu, Peru</h2>
-              <p class="text-[#5B5F62] mt-1 text-sm">Machu Picchu, Peru</p>
-
-              <div class="mt-3 flex items-center justify-between">
-                <p>
-                  <span class="text-lg font-bold text-[#2D3134]">$99</span>
-                  <span class="text-[#5b5f62] text-sm">/Person</span>
+              <div class="mt-2 p-2">
+                <h2 class="text-[#2D3134] font-semibold text-[24px]">
+                  Machu Picchu, Peru
+                </h2>
+                <p class="text-[#5B5F62] mt-1 text-[14px]">
+                  Machu Picchu, Peru
                 </p>
 
-                <div>
-                  <button
-                    type="button"
-                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  >
-                    Book Now
-                  </button>
+                <div class="mt-4 flex items-center justify-between">
+                  <p>
+                    <span class="text-[24px] font-bold text-[#2D3134]"
+                      >$99</span
+                    >
+                    <span class="text-[#5b5f62] text-sm">/Person</span>
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="text-[#2D3134] bg-[#FFFFFF] border border-[#2D3134] focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <!-- card 3 -->
-        <article
-          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
-        >
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                class="w-[370px] h-[247px] object-cover"
-                src="../images/card7.png"
-                alt="Hotel Photo"
-              />
-            </div>
+            </a>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="w-[386px] h-[440px] rounded-xl border-2 border-[#FFFFFF] overflow-hidden bg-[#C0BCA138] p-3"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="w-full h-[252px] object-cover"
+                  src="../images/card7.png"
+                  alt="Hotel Photo"
+                />
+              </div>
 
-            <div class="mt-1 p-2">
-              <h2 class="text-[#2D3134] font-semibold">
-                The Grand Canyon, Arizona
-              </h2>
-              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
-
-              <div class="mt-3 flex items-center justify-between">
-                <p>
-                  <span class="text-lg font-bold text-[#2D3134]">$70</span>
-                  <span class="text-[#5b5f62] text-sm">/Person</span>
+              <div class="mt-2 p-2">
+                <h2 class="text-[#2D3134] font-semibold text-[24px]">
+                  The Grand Canyon, Arizona
+                </h2>
+                <p class="text-[#5B5F62] mt-1 text-[14px]">
+                  Mountain Hiking Tour
                 </p>
 
-                <div>
-                  <button
-                    type="button"
-                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  >
-                    Book Now
-                  </button>
+                <div class="mt-4 flex items-center justify-between">
+                  <p>
+                    <span class="text-[24px] font-bold text-[#2D3134]"
+                      >$70</span
+                    >
+                    <span class="text-[#5b5f62] text-sm">/Person</span>
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="text-[#2D3134] bg-[#FFFFFF] border border-[#2D3134] focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <!-- card 4 -->
-        <article
-          class="rounded-xl bg-[#C0BCA138] p-3 shadow-lg hover:shadow-xl"
-        >
-          <a href="#">
-            <div class="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                class="w-[370px] h-[247px] object-cover"
-                src="../images/card8.png"
-                alt="Hotel Photo"
-              />
-            </div>
+            </a>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="w-[386px] h-[440px] rounded-xl border-2 border-[#FFFFFF] overflow-hidden bg-[#C0BCA138] p-3"
+          >
+            <a href="#">
+              <div class="relative flex items-end overflow-hidden rounded-xl">
+                <img
+                  class="w-full h-[252px] object-cover"
+                  src="../images/card8.png"
+                  alt="Hotel Photo"
+                />
+              </div>
 
-            <div class="mt-1 p-2">
-              <h2 class="text-[#2D3134] font-semibold">Rome, Italy</h2>
-              <p class="text-[#5B5F62] mt-1 text-sm">Mountain Hiking Tour</p>
-
-              <div class="mt-3 flex items-center justify-between">
-                <p>
-                  <span class="text-lg font-bold text-[#2D3134]">$99</span>
-                  <span class="text-[#5b5f62] text-sm">/Person</span>
+              <div class="mt-2 p-2">
+                <h2 class="text-[#2D3134] font-semibold text-[24px]">
+                  Rome, Italy
+                </h2>
+                <p class="text-[#5B5F62] mt-1 text-[14px]">
+                  Mountain Hiking Tour
                 </p>
 
-                <div>
-                  <button
-                    type="button"
-                    class="text-[#2D3134] border border-gray-500 focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                  >
-                    Book Now
-                  </button>
+                <div class="mt-4 flex items-center justify-between">
+                  <p>
+                    <span class="text-[24px] font-bold text-[#2D3134]"
+                      >$99</span
+                    >
+                    <span class="text-[#5b5f62] text-sm">/Person</span>
+                  </p>
+
+                  <div>
+                    <button
+                      type="button"
+                      class="text-[#2D3134] bg-[#FFFFFF] border border-[#2D3134] focus:outline-none cursor-pointer focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-4 py-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                    >
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
     <!-- storefront -->
     <section
       class="bg-white flex justify-center items-center dark:bg-gray-900 pt-16"
@@ -442,15 +457,171 @@
 
     <!-- category Top Destination  -->
     <section
-      class="max-w-screen-2xl mx-auto flex flex-col justify-between items-center pt-32"
+      class="max-w-7xl mx-auto flex flex-col justify-center items-center pt-24"
     >
-      <article class="flex flex-col justify-center items-center mb-10">
+      <article class="flex flex-col justify-center items-center mb-16">
         <p class="text-xl font-semibold text-[#5E6282] mb-2">CATEGORY</p>
-        <h2 class="text-5xl text-[#14183E] font_poppins font-bold">
+        <h2 class="text-5xl text-[#14183E] font_volkhov font-bold">
           Top Destination
         </h2>
       </article>
       <!-- table  -->
+      <section>
+        <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row gap-4">
+          <!-- Column 1 -->
+          <div class="flex flex-col gap-6">
+            <div
+              class="bg-white sm:w-[270px] md:w-[270px] h-[250px] rounded-lg shadow-lg overflow-hidden relative"
+            >
+              <img
+                src="../images/card15.png"
+                class="w-full h-full object-cover"
+                alt="Location"
+              />
+              <div
+                class="absolute top-3 left-3 bg-white text-gray-800 text-sm font-semibold px-3 py-1 rounded-full"
+              >
+                3.5
+              </div>
+              <!-- bg-gradient -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+              ></div>
+              <div class="absolute bottom-2 p-4">
+                <h2 class="text-white font-bold text-lg">Vietnam</h2>
+                <p class="text-white text-sm">Worefall</p>
+              </div>
+            </div>
+            <div
+              class="bg-white sm:w-[270px] h-[250px] rounded-lg shadow-lg overflow-hidden relative"
+            >
+              <img
+                src="../images/card16.png"
+                class="w-full h-full object-cover"
+                alt="Location"
+              />
+              <div
+                class="absolute top-3 left-3 bg-white text-gray-800 text-sm font-semibold px-3 py-1 rounded-full"
+              >
+                3.5
+              </div>
+              <!-- bg-gradient -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+              ></div>
+
+              <div class="absolute bottom-2 p-4">
+                <h2 class="text-white font-bold text-lg">Vietnam</h2>
+                <p class="text-white text-sm">Worefall</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div
+            class="w-full sm:w-[370px] h-[526px] bg-white rounded-lg shadow-lg overflow-hidden relative"
+          >
+            <img
+              src="../images/card17.png"
+              class="w-full h-full object-cover"
+              alt="Location"
+            />
+            <div
+              class="absolute top-3 left-3 bg-[#2D3134] text-white text-sm font-semibold px-3 py-1 rounded-full"
+            >
+              3.5
+            </div>
+            <!-- bg-gradient -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+            ></div>
+
+            <!-- <div
+              class="absolute inset-0 bg-gradient-to-t from-[#121210] via-gray-100/5"
+            ></div> -->
+
+            <div class="absolute bottom-2 p-4">
+              <h2 class="text-white font-bold text-lg">Vietnam</h2>
+              <p class="text-white text-sm">Worefall</p>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="flex flex-wrap gap-4 w-[470px] sm:w-[470px]">
+            <div
+              class="bg-white w-full sm:w-[470px] h-[250px] rounded-lg shadow-lg overflow-hidden relative"
+            >
+              <img
+                src="../images/card18.png"
+                class="w-full h-full object-cover"
+                alt="Location"
+              />
+              <div
+                class="absolute top-3 left-3 bg-[#2D3134] text-white text-sm font-semibold px-3 py-1 rounded-full"
+              >
+                3.5
+              </div>
+              <!-- bg-gradient -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+              ></div>
+              <div class="absolute bottom-2 p-4">
+                <h2 class="text-white font-bold text-lg">Vietnam</h2>
+                <p class="text-white text-sm">Worefall</p>
+              </div>
+            </div>
+
+            <!-- card 2 & 3 -->
+            <div class="flex gap-4 w-full">
+              <div
+                class="bg-white w-[190px] sm:w-[170px] h-[263px] rounded-lg shadow-lg overflow-hidden relative"
+              >
+                <img
+                  src="../images/card19.png"
+                  class="w-full h-full object-cover"
+                  alt="Location"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-[#2D3134] text-white text-sm font-semibold px-3 py-1 rounded-full"
+                >
+                  3.5
+                </div>
+                <!-- bg-gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+                ></div>
+                <div class="absolute bottom-2 p-4">
+                  <h2 class="text-white font-bold text-lg">Vietnam</h2>
+                  <p class="text-white text-sm">Worefall</p>
+                </div>
+              </div>
+
+              <div
+                class="bg-white w-[270px] sm:w-[270px] h-[263px] rounded-lg shadow-lg overflow-hidden relative"
+              >
+                <img
+                  src="../images/card20.png"
+                  class="w-full h-full object-cover"
+                  alt="Location"
+                />
+                <div
+                  class="absolute top-3 left-3 bg-[#2D3134] text-white text-sm font-semibold px-3 py-1 rounded-full"
+                >
+                  3.5
+                </div>
+                <!-- bg-gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-stone-800 via-stone-800/1"
+                ></div>
+                <div class="absolute bottom-2 p-4">
+                  <h2 class="text-white font-bold text-lg">Vietnam</h2>
+                  <p class="text-white text-sm">Worefall</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- footer section -->
